@@ -3,9 +3,9 @@ package com.ken.tagimage;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -30,7 +30,7 @@ public class ViewDialogFragment extends DialogFragment {
         final View view = inflater.inflate(R.layout.dialog_add_tag, null);
         final EditText tab_name = (EditText) view.findViewById(R.id.tab_name);
         builder.setView(view)
-                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                .setPositiveButton("纭畾", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if (callback != null) {
